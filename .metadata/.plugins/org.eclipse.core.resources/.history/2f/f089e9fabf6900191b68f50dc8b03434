@@ -1,0 +1,43 @@
+package com.makemytrip.qa.test;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.makemytrip.qa.base.TestBase;
+import com.makemytrip.qa.pages.HomePage;
+
+public class HomePageTest extends TestBase{
+
+    HomePage homePage;
+
+    
+    public HomePageTest(){
+		super();
+	}
+	
+	@BeforeMethod
+	public void setUp() throws InterruptedException{
+		initialization();
+		homePage = new HomePage();
+		Thread.sleep(1500);
+
+    }
+	
+	//@Test(priority = 1)
+	//public void homePageTitleTest(){
+	//	String actualHomePageTitle = homePage.getHomePageTitle();
+	//	System.out.println("actualHomePageTitle is " + actualHomePageTitle);
+	 //   Assert.assertEquals(actualHomePageTitle, prop.getProperty("HomePageTitle"));
+	//}
+
+	@Test(priority = 2)
+    public void selectToFromStations() throws InterruptedException{
+	    homePage.clickRoundTripCheckbox();
+	    homePage.fromSearchCityMethod(prop.getProperty("FromCityName"));
+	    homePage.toSearchCityMethod(prop.getProperty("ToCityName"));
+	    homePage.calenderMethod();
+	    homePage.clickonSearchButton();
+	}
+
+}

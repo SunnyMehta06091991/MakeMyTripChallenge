@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="125208" started-at="2019-04-28T19:48:22Z" finished-at="2019-04-28T19:50:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="125208" started-at="2019-04-28T19:48:22Z" finished-at="2019-04-28T19:50:27Z">
+      <class name="com.makemytrip.qa.test.SearchPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.makemytrip.qa.test.SearchPageTest@27efef64]" name="setUp" is-config="true" duration-ms="52311" started-at="2019-04-29T01:18:22Z" finished-at="2019-04-29T01:19:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getDepartureRates()[pri:5, instance:com.makemytrip.qa.test.SearchPageTest@27efef64]" name="getDepartureRates" duration-ms="72863" started-at="2019-04-29T01:19:14Z" finished-at="2019-04-29T01:20:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDepartureRates -->
+      </class> <!-- com.makemytrip.qa.test.SearchPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

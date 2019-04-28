@@ -1,0 +1,6 @@
+package com.makemytrip.qa.test;
+
+public class HomePageTest extends TestBase{
+
+	
+}

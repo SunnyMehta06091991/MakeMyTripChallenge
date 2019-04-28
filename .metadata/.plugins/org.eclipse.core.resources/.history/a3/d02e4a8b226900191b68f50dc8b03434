@@ -1,0 +1,5 @@
+package com.makemytrip.qa.base;
+
+public class TestBase {
+
+}

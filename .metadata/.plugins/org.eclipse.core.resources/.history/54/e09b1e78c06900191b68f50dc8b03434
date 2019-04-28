@@ -1,0 +1,13 @@
+# url to be tested
+url = https://www.makemytrip.com
+#browser on which testing needs to be done.
+browser = chrome
+#chrome driver path
+chromeDriverPath = G:\\Assignment-2\\WebDriver\\ChromeDriver\\chromedriver.exe
+#gecko driver path
+geckoDriverPath = G:\\Automation\\WebDriver\\GheckoDriver\\geckodriver.exe
+#fromCityName used in homepage
+FromCityName = Delhi
+#toCityName used in homepage
+ToCityName = Banglore
+

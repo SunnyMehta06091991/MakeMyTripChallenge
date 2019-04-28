@@ -1,0 +1,35 @@
+package com.makemytrip.qa.util;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import com.makemytrip.qa.base.TestBase;
+
+public class TestUtils extends TestBase{
+	
+	public static long pageLoadTimeout = 30 ;
+	public static long implicitWautTimeout = 20 ; 
+	
+	
+	public static void flash(WebElement element,WebDriver driver){
+		JavascriptExecutor js = ((JavascriptExecutor)driver);
+		String bgcolor = element.getCssValue("backgroundcolor");
+		for(int i =0 ; i < 50 ; i++ ){
+			changeColor("rgb(0,200,0)",element,driver");
+			changeColor(bgcolor,element,driver);
+		}
+		
+	public static void changeColor(String color , WebElement element , WebDriver driver){
+		JavascriptExecutor js = ((JavascriptExecutor)driver);
+
+	}
+	}
+     
+	
+	
+	
+	
+	
+
+}

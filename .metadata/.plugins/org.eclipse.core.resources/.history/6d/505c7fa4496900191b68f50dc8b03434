@@ -1,0 +1,25 @@
+package com.makemytrip.qa.test;
+
+import org.testng.annotations.BeforeMethod;
+
+import com.makemytrip.qa.base.TestBase;
+import com.makemytrip.qa.pages.HomePage;
+
+public class HomePageTest extends TestBase{
+
+    HomePage homePage;
+
+    
+    public HomePageTest(){
+		super();
+	}
+	
+	@BeforeMethod
+	public void setUp() throws InterruptedException{
+		initialization();
+		homePage = new HomePage();
+		Thread.sleep(3000);
+
+    }
+
+}
