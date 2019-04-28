@@ -72,9 +72,9 @@ public class HomePage extends TestBase{
 		public void fromSearchCityMethod(String fromCityName) throws InterruptedException{
 			fromCity.click();
 			TestUtils.flash(fromHighlight,driver);
-            fromSearchBox.sendKeys(fromCityName);
-            Thread.sleep(1000);
-            firstFromClick.click();
+                        fromSearchBox.sendKeys(fromCityName);
+                        Thread.sleep(1000);
+                        firstFromClick.click();
 			}
        
 	   public void toSearchCityMethod(String toCityName)throws InterruptedException{
@@ -87,7 +87,7 @@ public class HomePage extends TestBase{
 	   public void calenderMethod() throws InterruptedException{
 		   Thread.sleep(1000);
 		   TestUtils.flash(depHighlight, driver);
-		   String todaysDate = TestUtils.calenderMethod(1);
+		   String todaysDate = TestUtils.calenderMethod(TestUtils.totalDaysToday);
 		   System.out.println("Today's date is " + todaysDate);
 		   //departureClick.click();
 		     String before_xpath = "//*[@id='root']/div/div[2]/div/div[2]/div[1]/div[3]/div[1]/div/div/div/div[2]/div/div[2]/div[1]/div[3]/div[";
@@ -105,7 +105,7 @@ public class HomePage extends TestBase{
 		    	   }
 		     }
 		     boolean flag1 = false;
-		     String todaysDateplus7 = TestUtils.calenderMethod(7);
+		     String todaysDateplus7 = TestUtils.calenderMethod(TestUtils.totalDaysTodayplus7);
 		     System.out.println("Today's date plus 7 days is " + todaysDateplus7);
 		     String before_xpath2 = "//*[@id='root']/div/div[2]/div/div[2]/div[1]/div[3]/div[1]/div/div/div/div[2]/div/div[2]/div[2]/div[3]/div[";
 		     String before_xpath1 = "//*[@id='root']/div/div[2]/div/div[2]/div[1]/div[3]/div[1]/div/div/div/div[2]/div/div[2]/div[1]/div[3]/div[";
