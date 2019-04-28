@@ -15,6 +15,9 @@ public class TestUtils extends TestBase{
 	
 	public static long pageLoadTimeout = 30 ;
 	public static long implicitWautTimeout = 20 ; 
+        public static int totalDaysToday = 0;
+	public static int totalDaysTodayplus7 = 7;
+
 	
 	
 	public static void flash(WebElement element, WebDriver driver) {
